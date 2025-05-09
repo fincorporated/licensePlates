@@ -1,0 +1,23 @@
+.page {
+    margin: 0% 10%
+}
+
+.counters h1 {
+    display: inline;
+}
+
+#usList {
+    float: left;
+}
+
+#caList {
+    float: right;
+}
+
+.seen {
+    text-decoration-line: line-through;
+}
+
+.unseen {
+    text-decoration: none;
+}
