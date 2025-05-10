@@ -16,16 +16,16 @@ button {
 }
 
 #usList {
-    float: left;
+    margin: auto;
     max-width: 50%;
-    padding: 20px;
+
     text-align: center;
 }
 
 #caList {
-    float: right;
+    margin: auto;
     max-width: 50%;
-    padding: 20px;
+
     text-align: center;
 }
 
