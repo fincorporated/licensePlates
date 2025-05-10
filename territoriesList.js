@@ -79,15 +79,18 @@ usTerritoryNames.forEach(item => {
     const listItem = document.createElement("li");
     listItem.textContent = item;
     usListElement.appendChild(listItem);
-    listItem.className = 'unseen';
+    const status = localStorage.getItem(item) || "unseen";
+    listItem.className = status;
     listItem.setAttribute("id", "item");
     listItem.addEventListener("click", markSeen);
 
     function markSeen() {
         if (listItem.className == "unseen") {
             listItem.className = "seen";
+            localStorage.setItem(item, "seen");
         } else {
             listItem.className = "unseen";
+            localStorage.setItem(item, "unseen");
         }
         document.getElementById("totalCounter").innerText = document.querySelectorAll("li.seen").length;
         document.getElementById("usCounter").innerText = document.querySelectorAll("#usList li.seen").length;
@@ -100,15 +103,18 @@ caTerritoryNames.forEach(item => {
     const listItem = document.createElement("li");
     listItem.textContent = item;
     caListElement.appendChild(listItem);
-    listItem.className = 'unseen';
+    const status = localStorage.getItem(item) || "unseen";
+    listItem.className = status;
     listItem.setAttribute("id", "item");
     listItem.addEventListener("click", markSeen);
 
     function markSeen() {
         if (listItem.className == "unseen") {
-            listItem.className = "seen";
+            listItem.className ="seen";
+            localStorage.setItem(item, "seen");
         } else {
             listItem.className = "unseen";
+            localStorage.setItem(item, "unseen")
         }
         document.getElementById("totalCounter").innerText = document.querySelectorAll("li.seen").length;
         document.getElementById("caCounter").innerText = document.querySelectorAll("#caList li.seen").length;
