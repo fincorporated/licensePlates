@@ -131,3 +131,10 @@ const caSeenTerritories = document.querySelectorAll('#caList li.seen');
 
 document.getElementById("usCounter").innerText = usSeenTerritories.length;
 document.getElementById("caCounter").innerText = caSeenTerritories.length;
+
+document.getElementById("reset").addEventListener("click", clearStorage);
+
+function clearStorage() {
+    localStorage.clear();
+    location.reload();
+}

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Kara's License Plate Tracker</title>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -8,13 +9,14 @@
     <body>
         <div class="page">
             <div class="counters">
-                <h1>Total Plates Seen: </h1> <h1 id="totalCounter"></h1><h1>/60</h1>
+                <h1>Total Plates Seen: </h1> <h1 id="totalCounter"></h1><h1>/60 </h1>
+                <button id="reset">Reset</button>
             </div>
             <div id="usList">
-                <h1>US States</h1><h2 id="usCounter" style="display:inline"></h2><h2 style="display:inline">/50 seen</h2>
+                <h1>US</h1><h2 id="usCounter" style="display:inline"></h2><h2 style="display:inline">/50 seen</h2>
             </div>
             <div id="caList">
-                <h1>Canadian Provinces</h1><h2 id="caCounter" style="display:inline"></h2><h2 style="display:inline">/10 seen</h2>
+                <h1>Canada</h1><h2 id="caCounter" style="display:inline"></h2><h2 style="display:inline">/10 seen</h2>
             </div>
             <script src="./territoriesList.js"></script>
         </div>

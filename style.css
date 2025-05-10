@@ -1,5 +1,14 @@
 .page {
-    margin: 0% 10%
+    margin: auto;
+    width: 50%;
+}
+
+button {
+    margin-left: 10px;
+}
+
+.counters {
+    text-align: center;
 }
 
 .counters h1 {
@@ -8,10 +17,27 @@
 
 #usList {
     float: left;
+    max-width: 50%;
+    padding: 20px;
+    text-align: center;
 }
 
 #caList {
     float: right;
+    max-width: 50%;
+    padding: 20px;
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+li {
+    padding-top: 10px;
+    font-size: large;
 }
 
 .seen {
